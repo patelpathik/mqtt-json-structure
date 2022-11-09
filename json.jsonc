@@ -21,7 +21,7 @@
   // * driver status
   "DS": [
     55, // internal temp
-    0,
+    0, // faults
     3000, // abs motor speed
     35, // motor current
     52.5, // motor voltage
