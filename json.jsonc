@@ -1,5 +1,5 @@
 {
-  // tracking status
+  // * tracking status
   "TRS": {
     "Lat": [12.916383],
     "Lon": [77.634651],
@@ -18,16 +18,16 @@
     "FG": 2080, // fuel gauge
     "ATS": 0 // anti theft status
   },
-  // driver status
-  "DS": {
-    "IntTemp": 55, // internal temp
-    "Faults": 0,
-    "AbsRPM": 3000, // abs motor speed
-    "Im": 35, // motor current
-    "Vm": 52.5, // motor voltage
-    "Tm": 62 // motor temperature
-  },
-  // battery status
+  // * driver status
+  "DS": [
+    55, // internal temp
+    0,
+    3000, // abs motor speed
+    35, // motor current
+    52.5, // motor voltage
+    62 // motor temperature
+  ],
+  // * battery status
   "BS": {
     "SOC": 0,
     "SOH": 100,
@@ -41,7 +41,7 @@
     "RWH": 2961, // RemainingWH
     "Series": 16, // CellCount
     "CBS": 1, // cell balancing state
-    // temperature
+    // * temperature
     "Temp": [
       3050, // T1
       3014, // T2
@@ -50,7 +50,7 @@
       4871, // M1
       4871 // M2
     ],
-    // cell voltages
+    // * cell voltages
     "CV": [
       4161, // Cell1 Voltage
       4161, // Cell2 Voltage
