@@ -38,53 +38,55 @@
     "I": 0, // current
     "V": 0, // voltage
     "Charging": 0,
-    "DesignedAH": 3000,
-    "DesignedWH": 3000,
-    "RemainingAH": 2961,
-    "RemainingWH": 2961,
-    "CellCount": 16,
+    "DAH": 3000, // DesignedAH
+    "DWH": 3000, // DesignedWH
+    "RAH": 2961, // RemainingAH
+    "RWH": 2961, // RemainingWH
+    "Series": 16, // CellCount
     "CBS": 1, // cell balancing state
     // temperature
-    "Temp": {
-      "T1": 3050,
-      "T2": 3014,
-      "T3": 3014,
-      "T4": 3012,
-      "M1": 4871,
-      "M2": 4871
-    },
+    "Temp": [
+      3050, // T1
+      3014, // T2
+      3014, // T3
+      3012, // T4
+      4871, // M1
+      4871 // M2
+    ],
     // cell voltages
-    "CV": {
-      "A": 4161,
-      "B": 4161,
-      "C": 4156,
-      "D": 4155,
-      "E": 4159,
-      "F": 4157,
-      "G": 4157,
-      "H": 4156,
-      "I": 4158,
-      "J": 4163,
-      "K": 4162,
-      "L": 4166,
-      "M": 4164,
-      "N": 4163,
-      "O": 4163,
-      "P": 4162
-    },
-    "Faults": {
-      "COV": 1,
-      "CUV": 1,
-      "POV": 1,
-      "PUV": 1,
-      "OC": 1,
-      "UC": 1,
-      "SC": 1,
-      "MosOT": 1,
-      "DOT": 1,
-      "COT": 1,
-      "EOT": 1
-    }
+    "CV": [
+      4161, // Cell1 Voltage
+      4161, // Cell2 Voltage
+      4156, // Cell3 Voltage
+      4155, // Cell4 Voltage
+      4159, // Cell5 Voltage
+      4157, // Cell6 Voltage
+      4157, // Cell7 Voltage
+      4156, // Cell8 Voltage
+      4158, // Cell9 Voltage
+      4163, // Cell10 Voltage
+      4162, // Cell11 Voltage
+      4166, // Cell12 Voltage
+      4164, // Cell13 Voltage
+      4163, // Cell14 Voltage
+      4163, // Cell15 Voltage
+      4162 // Cell16 Voltage
+    ],
+    "Faults": [
+      1, // COV
+      1, // CUV
+      1, // POV
+      1, // PUV
+      1, // OC
+      1, // UC
+      1, // SC
+      1, // MosOT
+      1, // DOT
+      1, // COT
+      1 // EOT
+    ]
   }
 }
-// GT_IoT/Publish/<DEV/PROD>/VehicleData/<deviceId>/<int>/<timestamp>
+// * Refined Topic Name: GT_IoT/Publish/<DEV/PROD>/VehicleData/<deviceId>/<int>/<timestamp>
+// * old SELECT *, upper(topic(3)) as ENV FROM 'GT_IoT/Publish/#'
+// * new SELECT *, upper(topic(3)) as ENV, topic(5) as DId, topic(6) as int, topic(7) as TS FROM 'GT_IoT/Publish/#'
