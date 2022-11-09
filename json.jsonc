@@ -1,0 +1,89 @@
+{
+  "DId": "GT_TEST_03", // device id
+  "int": 1,
+  "TS": 1662351245000, // timestamp
+  // tracking status
+  "TRS": {
+    "Lat": [12.916383],
+    "Lon": [77.634651],
+    "Speed": [0],
+    "GPSFix": [0],
+    "Alt": [0], // altitude
+    "AX": [0],
+    "AY": [0],
+    "AZ": [0],
+    "RX": [0],
+    "RY": [0],
+    "RZ": [0],
+    "Sats": 0, // satellites
+    "Mode": 0,
+    "Ign": 12209, // ignition
+    "FG": 2080, // fuel gauge
+    "ATS": 0 // anti theft status
+  },
+  // driver status
+  "DS": {
+    "IntTemp": 55, // internal temp
+    "Faults": 0,
+    "AbsRPM": 3000, // abs motor speed
+    "Im": 35, // motor current
+    "Vm": 52.5, // motor voltage
+    "Tm": 62 // motor temperature
+  },
+  // battery status
+  "BS": {
+    "SOC": 0,
+    "SOH": 100,
+    "Cycles": 30,
+    "I": 0, // current
+    "V": 0, // voltage
+    "Charging": 0,
+    "DesignedAH": 3000,
+    "DesignedWH": 3000,
+    "RemainingAH": 2961,
+    "RemainingWH": 2961,
+    "CellCount": 16,
+    "CBS": 1, // cell balancing state
+    // temperature
+    "Temp": {
+      "T1": 3050,
+      "T2": 3014,
+      "T3": 3014,
+      "T4": 3012,
+      "M1": 4871,
+      "M2": 4871
+    },
+    // cell voltages
+    "CV": {
+      "A": 4161,
+      "B": 4161,
+      "C": 4156,
+      "D": 4155,
+      "E": 4159,
+      "F": 4157,
+      "G": 4157,
+      "H": 4156,
+      "I": 4158,
+      "J": 4163,
+      "K": 4162,
+      "L": 4166,
+      "M": 4164,
+      "N": 4163,
+      "O": 4163,
+      "P": 4162
+    },
+    "Faults": {
+      "COV": 1,
+      "CUV": 1,
+      "POV": 1,
+      "PUV": 1,
+      "OC": 1,
+      "UC": 1,
+      "SC": 1,
+      "MosOT": 1,
+      "DOT": 1,
+      "COT": 1,
+      "EOT": 1
+    }
+  }
+}
