@@ -87,3 +87,4 @@
     }
   }
 }
+// GT_IoT/Publish/<DEV/PROD>/VehicleData/<deviceId>/<int>/<timestamp>
