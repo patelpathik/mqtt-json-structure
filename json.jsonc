@@ -1,7 +1,4 @@
 {
-  "DId": "GT_TEST_03", // device id
-  "int": 1,
-  "TS": 1662351245000, // timestamp
   // tracking status
   "TRS": {
     "Lat": [12.916383],
