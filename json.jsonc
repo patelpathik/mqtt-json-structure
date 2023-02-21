@@ -12,7 +12,7 @@
     "RY": [0],
     "RZ": [0],
     "Sats": 0, // satellites
-    "Mode": 0,
+    "Mode": 0, // 0 -> ICE Mode, 1 -> EV Mode
     "Ign": 12209, // ignition
     "FG": 2080, // fuel gauge
     "ATS": 0 // anti theft status
