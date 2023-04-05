@@ -3,16 +3,13 @@
   "TRS": {
     "Lat": [12.916383],
     "Lon": [77.634651],
-    "GPSFix": [0],
     "Alt": [0], // altitude in meters
     "AX": [0],
     "AY": [0],
     "AZ": [0],
-    "RX": [0],
-    "RY": [0],
-    "RZ": [0],
     "Sats": 0, // satellites
     "Mode": 0, // 0 -> ICE Mode, 1 -> EV Mode
+    "LA": 0, // SoC of LA Battery
     "Ign": 1, // ignition (0 -> ON; 1 -> OFF)
     "FG": 30, // fuel gauge in percent
     "ATS": 0, // anti theft status
