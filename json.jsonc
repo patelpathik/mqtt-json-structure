@@ -4,7 +4,7 @@
     "Lat": [12.916383],
     "Lon": [77.634651],
     "GPSFix": [0],
-    "Alt": [0], // altitude
+    "Alt": [0], // altitude in meters
     "AX": [0],
     "AY": [0],
     "AZ": [0],
@@ -13,14 +13,15 @@
     "RZ": [0],
     "Sats": 0, // satellites
     "Mode": 0, // 0 -> ICE Mode, 1 -> EV Mode
-    "Ign": 12209, // ignition
-    "FG": 2080, // fuel gauge
-    "ATS": 0 // anti theft status
+    "Ign": 1, // ignition (0 -> ON; 1 -> OFF)
+    "FG": 30, // fuel gauge in percent
+    "ATS": 0, // anti theft status
+    "Spd": [0] // speed in km/hr
   },
   // * driver status
   "DS": [
     55, // internal temp
-    0, // faults
+    0, // motor Id
     3000, // abs motor speed
     35, // motor current
     52.5, // motor voltage
