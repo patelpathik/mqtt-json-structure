@@ -67,17 +67,17 @@
       4162 // Cell16 Voltage
     ],
     "Faults": [
-      1, // COV
-      1, // CUV
-      1, // POV
-      1, // PUV
-      1, // OC
-      1, // UC
-      1, // SC
-      1, // MosOT
-      1, // DOT
-      1, // COT
-      1 // EOT
+      1, // Cell Over Voltage
+      1, // Cell Under Voltage
+      1, // Pack Over Voltage
+      1, // Pack Under Voltage
+      1, // Over Current
+      1, // Under Current
+      1, // Short Circuit
+      1, // Mosfet Over Temperature
+      1, // Discharge Mosfet Over Temperature
+      1, // Charge Mosfet Over Temperature
+      1 // Environmental Over Temperature
     ]
   }
 }
